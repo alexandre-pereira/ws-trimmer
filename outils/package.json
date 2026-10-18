@@ -1,0 +1,6 @@
+{
+  "license": "ISC",
+  "dependencies": {
+    "openscad-wasm-prebuilt": "^1.2.0"
+  }
+}

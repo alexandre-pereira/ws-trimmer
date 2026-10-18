@@ -1,0 +1,13 @@
+# dépendances et résultats intermédiaires des outils
+outils/node_modules/
+outils/asm/
+outils/asm_plie/
+# les mêmes, quand generer_stl.mjs est lancé depuis la racine du dépôt
+/asm/
+/asm_plie/
+outils/*.log
+outils/__pycache__/
+*.log
+
+# site construit localement (GitHub Actions le reconstruit)
+_site/

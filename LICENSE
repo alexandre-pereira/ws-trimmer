@@ -1,0 +1,99 @@
+Banc de calage parapente : licences
+===================================
+
+Ce fichier est rédigé en français, suivi d'un résumé en anglais : la version française fait foi.
+
+© 2026 WeSoar SASU. Le banc est conçu par Alexandre Pereira ; WeSoar SASU est titulaire
+des droits et le diffuse. Les fichiers sources sont publiés à l'adresse
+https://github.com/alexandre-pereira/trimming-tools (adresse des sources, « Source
+Location » au sens de la CERN-OHL-S). Ce dépôt réunit trois sortes de fichiers, sous trois
+licences :
+
+- Le matériel, sous licence CERN Open Hardware Licence version 2, variante à réciprocité
+  forte (CERN-OHL-S-2.0) : les modèles OpenSCAD (scad/) et les fichiers STL qui en sont
+  tirés (stl/). Texte complet : LICENSES/CERN-OHL-S-2.0.txt, copie non modifiée du texte
+  officiel (https://ohwr.org/cern_ohl_s_v2.txt).
+  Ils peuvent être imprimés, modifiés, partagés, et servir à fabriquer et à vendre des
+  bancs. Qui diffuse une version modifiée garde les mentions existantes, y ajoute une
+  mention datée qui décrit brièvement ses modifications, et la publie sous la même licence.
+  Qui remet un banc à quelqu'un lui indique où trouver les fichiers sources (les siens,
+  s'il les a modifiés) : le partage à l'identique porte sur les fichiers, pas sur l'objet
+  imprimé.
+
+- Le code, sous licence ISC, dont le texte complet suit : les scripts de outils/ (*.py et
+  generer_stl.mjs), la feuille de style outils/wesoar.css, outils/package.json,
+  outils/package-lock.json, .github/ et les fichiers de configuration du dépôt
+  (.gitattributes, .gitignore, CNAME).
+
+- Les images, les documents et les données, sous licence Creative Commons Attribution -
+  Partage dans les mêmes conditions 4.0 International (CC BY-SA 4.0) :
+  https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr
+  . images : apercu/, schémas de montage compris ;
+  . documents : README.md, README.en.md, NOTES.md, outils/LISEZMOI.md ;
+  . données : outils/lasers.json (cotes des télémètres, dont sont tirés les supports
+    du laser).
+  Ils peuvent être modifiés et partagés en citant l'auteur et en indiquant les
+  modifications ; ce qui en est tiré se partage sous la même licence.
+
+Attribution attendue, pour tous ces fichiers : « Banc de calage parapente, conçu par
+Alexandre Pereira, © 2026 WeSoar SASU », la licence du fichier (CERN-OHL-S-2.0, ISC ou
+CC BY-SA 4.0) et l'adresse https://github.com/alexandre-pereira/trimming-tools.
+
+Ne sont couverts par aucune de ces licences :
+
+- le nom WeSoar et son logo (outils/wesoar.svg, outils/wesoar-mark.svg, et le même
+  dessin partout où il est repris), qui appartiennent à WeSoar. Ces licences ne
+  donnent aucun droit sur eux : ils ne s'utilisent qu'avec l'autorisation écrite de
+  WeSoar. Une copie fidèle du dépôt peut les garder, pour désigner WeSoar comme
+  diffuseur d'origine ; une version modifiée, ou un banc fabriqué à partir de ces
+  fichiers, ne porte ni le nom ni le logo WeSoar, et ne laisse pas croire qu'il vient
+  de WeSoar ou que WeSoar l'approuve ;
+- la police Mona Sans (outils/mona-sans.woff2), des Mona Sans Project Authors, sous
+  SIL Open Font License 1.1 (outils/mona-sans-OFL.txt, https://openfontlicense.org). Le
+  fichier est celui de la version 2.0.27 du projet, sans modification :
+  fonts/webfonts/variable/MonaSansVF[opsz,wght].woff2, renommé, de l'archive
+  mona-sans-webfonts-v2.0.27.zip (https://github.com/github/mona-sans/releases/tag/v2.0.27) ;
+  mona-sans-OFL.txt est le OFL.txt de la même archive ;
+- le texte des licences (LICENSES/), qui appartient à ses auteurs.
+
+English summary (the French version is authoritative): © 2026 WeSoar SASU. The bench is
+designed by Alexandre Pereira; WeSoar SASU owns the rights and distributes it. Source
+Location: https://github.com/alexandre-pereira/trimming-tools.
+- Hardware: the OpenSCAD models (scad/) and the STL files made from them (stl/) are under
+  the CERN Open Hardware Licence version 2, strongly reciprocal variant (CERN-OHL-S-2.0),
+  full text in LICENSES/CERN-OHL-S-2.0.txt. They may be used to make and sell benches. A
+  modified version keeps the existing notices, adds a dated notice briefly describing the
+  changes, and is released under the same licence; whoever hands over a bench tells the
+  recipient where to find the source files (their own, if modified).
+- Code: the scripts in outils/ (*.py and generer_stl.mjs), outils/wesoar.css,
+  outils/package.json, outils/package-lock.json, .github/ and the repository configuration
+  files (.gitattributes, .gitignore, CNAME) are under the ISC licence below.
+- Images, documents and data: apercu/, README.md, README.en.md, NOTES.md,
+  outils/LISEZMOI.md and outils/lasers.json (distance meter dimensions) are under CC BY-SA
+  4.0 (https://creativecommons.org/licenses/by-sa/4.0/legalcode); changes must be indicated.
+Credit: "Paraglider trimming bench, designed by Alexandre Pereira, © 2026 WeSoar SASU",
+the file's licence and the repository address. The WeSoar name and logo
+(outils/wesoar.svg, outils/wesoar-mark.svg, and the same design wherever it appears)
+belong to WeSoar and are covered by none of these licences: they may only be used with
+WeSoar's written permission. An unmodified copy of the repository may keep them, to
+credit WeSoar as the original distributor; a modified version, or a bench built from
+these files, must not bear the WeSoar name or logo, nor suggest that it comes from or is
+endorsed by WeSoar. The Mona Sans typeface is under the SIL Open Font License 1.1: the
+unmodified MonaSansVF[opsz,wght].woff2 from the official v2.0.27 release, renamed.
+
+
+ISC License
+
+Copyright (c) 2026 WeSoar SASU
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
