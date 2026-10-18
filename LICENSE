@@ -5,7 +5,7 @@ Ce fichier est rédigé en français, suivi d'un résumé en anglais : la versio
 
 © 2026 WeSoar SASU. Le banc est conçu par Alexandre Pereira ; WeSoar SASU est titulaire
 des droits et le diffuse. Les fichiers sources sont publiés à l'adresse
-https://github.com/alexandre-pereira/trimming-tools (adresse des sources, « Source
+https://github.com/alexandre-pereira/ws-trimmer (adresse des sources, « Source
 Location » au sens de la CERN-OHL-S). Ce dépôt réunit trois sortes de fichiers, sous trois
 licences :
 
@@ -37,7 +37,7 @@ licences :
 
 Attribution attendue, pour tous ces fichiers : « Banc de calage parapente, conçu par
 Alexandre Pereira, © 2026 WeSoar SASU », la licence du fichier (CERN-OHL-S-2.0, ISC ou
-CC BY-SA 4.0) et l'adresse https://github.com/alexandre-pereira/trimming-tools.
+CC BY-SA 4.0) et l'adresse https://github.com/alexandre-pereira/ws-trimmer.
 
 Ne sont couverts par aucune de ces licences :
 
@@ -58,7 +58,7 @@ Ne sont couverts par aucune de ces licences :
 
 English summary (the French version is authoritative): © 2026 WeSoar SASU. The bench is
 designed by Alexandre Pereira; WeSoar SASU owns the rights and distributes it. Source
-Location: https://github.com/alexandre-pereira/trimming-tools.
+Location: https://github.com/alexandre-pereira/ws-trimmer.
 - Hardware: the OpenSCAD models (scad/) and the STL files made from them (stl/) are under
   the CERN Open Hardware Licence version 2, strongly reciprocal variant (CERN-OHL-S-2.0),
   full text in LICENSES/CERN-OHL-S-2.0.txt. They may be used to make and sell benches. A

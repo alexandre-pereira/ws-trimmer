@@ -161,11 +161,11 @@ holder.
 
 ## Going further
 
-- [NOTES.md](https://github.com/alexandre-pereira/trimming-tools/blob/main/NOTES.md) (in
+- [NOTES.md](https://github.com/alexandre-pereira/ws-trimmer/blob/main/NOTES.md) (in
   French): design choices, dimensions, prices recorded, variants set aside and what has been
   checked.
 - The OpenSCAD models are in `scad/`, the scripts that regenerate the STL files, the images
-  and this site in `outils/`. Repository: <https://github.com/alexandre-pereira/trimming-tools>,
+  and this site in `outils/`. Repository: <https://github.com/alexandre-pereira/ws-trimmer>,
   site: <https://trimming-tools.wesoar.fr>.
 - A first unit has been printed and tried by its author; these trials remain limited and are
   neither a certification nor a validation by a workshop. Follow the wing manufacturer's values
@@ -178,8 +178,8 @@ distributes it.
 
 | Files | Licence |
 |---|---|
-| OpenSCAD models (`scad/`) and STL files (`stl/`) | [CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt) (text in [`LICENSES/`](https://github.com/alexandre-pereira/trimming-tools/blob/main/LICENSES/CERN-OHL-S-2.0.txt)) |
-| Scripts in `outils/` (`*.py`, `generer_stl.mjs`), `outils/wesoar.css`, `outils/package*.json`, `.github/`, repository configuration | [ISC](https://github.com/alexandre-pereira/trimming-tools/blob/main/LICENSE) |
+| OpenSCAD models (`scad/`) and STL files (`stl/`) | [CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt) (text in [`LICENSES/`](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSES/CERN-OHL-S-2.0.txt)) |
+| Scripts in `outils/` (`*.py`, `generer_stl.mjs`), `outils/wesoar.css`, `outils/package*.json`, `.github/`, repository configuration | [ISC](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSE) |
 | Images (`apercu/`), documents (`README.md`, `README.en.md`, `NOTES.md`, `outils/LISEZMOI.md`), data (`outils/lasers.json`) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | Mona Sans typeface (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) | [SIL OFL 1.1](https://openfontlicense.org), from its authors |
 | WeSoar name and logo (`outils/wesoar.svg`, `outils/wesoar-mark.svg`) | none: they belong to WeSoar |
@@ -196,6 +196,6 @@ files, not to the printed object: as far as the licence goes, it is enough to te
 where to find the source files (the seller's own, if modified). A modified version or a bench
 built from these files must not bear the WeSoar name or logo.
 
-Details are in [LICENSE](https://github.com/alexandre-pereira/trimming-tools/blob/main/LICENSE)
+Details are in [LICENSE](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSE)
 (the French version is authoritative), the legal notice at the foot of the
 [bench page](https://trimming-tools.wesoar.fr/#legal).

@@ -631,7 +631,7 @@ Par ordre d'intérêt ; aucune n'est faite.
 
 ## Le dépôt et le site
 
-Ce dossier est le dépôt public <https://github.com/alexandre-pereira/trimming-tools> :
+Ce dossier est le dépôt public <https://github.com/alexandre-pereira/ws-trimmer> :
 `scad/` (modèles), `stl/` (fichiers à imprimer), `apercu/` (images et schémas), `outils/`
 (scripts qui produisent les STL, les images et le site). Le site est publié sur
 <https://trimming-tools.wesoar.fr> (et <https://alexandre-pereira.github.io/trimming-tools/>).

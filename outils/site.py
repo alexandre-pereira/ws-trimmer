@@ -20,7 +20,7 @@ import markdown
 OUTILS = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(OUTILS)
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(RACINE, "_site")
-DEPOT = "https://github.com/alexandre-pereira/trimming-tools"
+DEPOT = "https://github.com/alexandre-pereira/ws-trimmer"
 # la première langue est à la racine du site, les autres dans un dossier à leur nom
 LANGUES = ["en", "fr"]
 # clé du localStorage qui retient la langue choisie par le visiteur

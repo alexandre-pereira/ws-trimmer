@@ -163,11 +163,11 @@ Réglez le télémètre pour mesurer **depuis sa face avant** : elle affleure le
 
 ## Pour aller plus loin
 
-- [NOTES.md](https://github.com/alexandre-pereira/trimming-tools/blob/main/NOTES.md) : les
+- [NOTES.md](https://github.com/alexandre-pereira/ws-trimmer/blob/main/NOTES.md) : les
   choix de conception, les cotes, les prix relevés, les variantes écartées et ce qui a été
   vérifié.
 - Les modèles OpenSCAD sont dans `scad/`, les scripts qui regénèrent STL, images et ce site
-  dans `outils/`. Dépôt : <https://github.com/alexandre-pereira/trimming-tools>, site : <https://trimming-tools.wesoar.fr>.
+  dans `outils/`. Dépôt : <https://github.com/alexandre-pereira/ws-trimmer>, site : <https://trimming-tools.wesoar.fr>.
 - Un premier exemplaire a été imprimé et essayé par son auteur ; ces essais restent limités et ne
   valent ni certification ni validation par un atelier. Respectez les valeurs et les procédures
   du constructeur de l'aile, et faites contrôler tout recalage par un atelier qualifié.
@@ -179,8 +179,8 @@ le diffuse.
 
 | Fichiers | Licence |
 |---|---|
-| Modèles OpenSCAD (`scad/`) et fichiers STL (`stl/`) | [CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt) (texte dans [`LICENSES/`](https://github.com/alexandre-pereira/trimming-tools/blob/main/LICENSES/CERN-OHL-S-2.0.txt)) |
-| Scripts de `outils/` (`*.py`, `generer_stl.mjs`), `outils/wesoar.css`, `outils/package*.json`, `.github/`, configuration du dépôt | [ISC](https://github.com/alexandre-pereira/trimming-tools/blob/main/LICENSE) |
+| Modèles OpenSCAD (`scad/`) et fichiers STL (`stl/`) | [CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt) (texte dans [`LICENSES/`](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSES/CERN-OHL-S-2.0.txt)) |
+| Scripts de `outils/` (`*.py`, `generer_stl.mjs`), `outils/wesoar.css`, `outils/package*.json`, `.github/`, configuration du dépôt | [ISC](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSE) |
 | Images (`apercu/`), documents (`README.md`, `README.en.md`, `NOTES.md`, `outils/LISEZMOI.md`), données (`outils/lasers.json`) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) |
 | Police Mona Sans (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) | [SIL OFL 1.1](https://openfontlicense.org), de ses auteurs |
 | Nom et logo WeSoar (`outils/wesoar.svg`, `outils/wesoar-mark.svg`) | aucune : ils appartiennent à WeSoar |
@@ -197,5 +197,5 @@ adaptés, pas l'objet imprimé : côté licence, il suffit d'indiquer à l'achet
 fichiers sources (ceux du vendeur, s'il les a modifiés). Une version modifiée ou un banc fabriqué à partir de ces
 fichiers ne porte ni le nom ni le logo WeSoar.
 
-Le détail est dans [LICENSE](https://github.com/alexandre-pereira/trimming-tools/blob/main/LICENSE),
+Le détail est dans [LICENSE](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSE),
 les mentions légales au pied de la [page du banc](https://trimming-tools.wesoar.fr/fr/#legal).
