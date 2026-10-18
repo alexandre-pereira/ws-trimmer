@@ -657,7 +657,7 @@ avec le sélecteur EN / FR est retenu.
 
 L'habillage (`outils/wesoar.css`, `wesoar.svg`, `wesoar-mark.svg` : feuille de style,
 logo, icône de l'onglet) est celui de tous les outils WeSoar ; les mêmes fichiers sont dans
-le dépôt de PG Soundings (`scripts/`). Une modification s'y reporte telle quelle ; ce qui
+le dépôt de WS Sounding (`scripts/`). Une modification s'y reporte telle quelle ; ce qui
 est propre à cette page reste dans `site.py`.
 
 La police Mona Sans (`outils/mona-sans.woff2`, licence SIL OFL dans `outils/mona-sans-OFL.txt`)

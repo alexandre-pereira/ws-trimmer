@@ -1,9 +1,9 @@
-# Banc de calage parapente
+# WS Trimmer, banc de calage parapente
 
 [English version](README.en.md)
 
-> **Avertissement** : un premier exemplaire de ce banc a été imprimé et essayé par son auteur ;
-> ces essais restent limités et ne valent ni certification ni validation par un atelier. Le banc
+> **Avertissement** : un premier exemplaire de ce banc a été imprimé, essayé et validé par son
+> auteur ; ces essais ne valent ni certification ni validation par un atelier. Le banc
 > est fourni gratuitement, sans garantie dans les limites permises par la loi, et s'utilise aux
 > risques de l'utilisateur ; cela n'exclut ni la responsabilité pour les dommages corporels, ni
 > celle du fait des produits défectueux, ni celle due au dol ou à la faute lourde. Le calage d'une aile doit respecter les valeurs et les procédures de son
@@ -168,8 +168,7 @@ Réglez le télémètre pour mesurer **depuis sa face avant** : elle affleure le
   vérifié.
 - Les modèles OpenSCAD sont dans `scad/`, les scripts qui regénèrent STL, images et ce site
   dans `outils/`. Dépôt : <https://github.com/alexandre-pereira/ws-trimmer>, site : <https://trimming-tools.wesoar.fr>.
-- Un premier exemplaire a été imprimé et essayé par son auteur ; ces essais restent limités et ne
-  valent ni certification ni validation par un atelier. Respectez les valeurs et les procédures
+- Un premier exemplaire a été imprimé, essayé et validé par son auteur ; ces essais ne valent ni certification ni validation par un atelier. Respectez les valeurs et les procédures
   du constructeur de l'aile, et faites contrôler tout recalage par un atelier qualifié.
 
 ## Licence
@@ -185,7 +184,7 @@ le diffuse.
 | Police Mona Sans (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) | [SIL OFL 1.1](https://openfontlicense.org), de ses auteurs |
 | Nom et logo WeSoar (`outils/wesoar.svg`, `outils/wesoar-mark.svg`) | aucune : ils appartiennent à WeSoar |
 
-Toute copie cite « Banc de calage parapente, conçu par Alexandre Pereira, © 2026 WeSoar SASU »,
+Toute copie cite « WS Trimmer, banc de calage parapente, conçu par Alexandre Pereira, © 2026 WeSoar SASU »,
 la licence du fichier et le lien du dépôt. Qui modifie un fichier l'indique : la CERN-OHL-S
 demande une mention datée qui décrit brièvement la modification, la CC BY-SA de signaler les
 modifications ; une version modifiée de ces fichiers se diffuse sous la même licence.

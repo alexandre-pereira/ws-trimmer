@@ -65,7 +65,7 @@ def ligne_editeur(e, capital, siege, tva, telephone):
         '<a href="mailto:%s">%s</a>' % (e["email"], e["email"]),
     ] if x)
 
-# « outils » : les autres outils WeSoar, au pied de page. Ils ne sont pas tous gratuits : Wing Trim a un
+# « outils » : les autres outils WeSoar, au pied de page. Ils ne sont pas tous gratuits : WS Trim a un
 # compte gratuit limité (10 mesures par mois, certaines voiles EN C, EN D et CCC ; les autres demandent
 # un compte pro), d'où « compte gratuit limité ».
 TEXTES = {
@@ -83,9 +83,9 @@ TEXTES = {
         "taille": "%d kB",
         "cree": "Developed and offered free of charge by WeSoar.",
         "autres": "Other WeSoar tools:",
-        "outils": [("https://trim.wesoar.fr/", "Wing Trim, the app to measure and trim your lines (limited free account)"),
-                   ("https://soundings.wesoar.fr/", "PG Soundings, the free-flight forecast inside Windy"),
-                   ("https://viewer.wesoar.fr/", "Viewer 3D, to replay your flights over the terrain and share them")],
+        "outils": [("https://trim.wesoar.fr/", "WS Trim, the app to measure and trim your lines (limited free account)"),
+                   ("https://soundings.wesoar.fr/", "WS Sounding, the free-flight forecast inside Windy"),
+                   ("https://viewer.wesoar.fr/", "WS Viewer, to replay your flights over the terrain and share them")],
         "pied": "Page built automatically from the repository: it reflects the files as of the last change.",
         "mentions_titre": "Legal notice",
         "mentions": lambda e, h, base: [
@@ -100,13 +100,12 @@ TEXTES = {
             '<a href="https://ohwr.org/cern_ohl_s_v2.txt">CERN-OHL-S-2.0</a> licence, its code under the '
             '<a href="%s/blob/main/LICENSE">ISC licence</a>, its pictures, assembly diagrams, texts and distance meter dimensions '
             'under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> licence, '
-            "crediting “Paraglider trimming bench, designed "
+            "crediting “WS Trimmer, paraglider trimming bench, designed "
             "by Alexandre Pereira, © 2026 WeSoar SASU”, the file's licence and the repository link. The WeSoar name and logo "
             "belong to the publisher and are covered by none of these licences. The Mona Sans typeface is used under "
             'the <a href="%smona-sans-OFL.txt">SIL Open Font License</a>. %s and the other brands cited belong to their '
             "owners; the bench is not affiliated with them." % (DEPOT, base, MARQUES),
-            "<b>Liability</b>: a first unit of the bench has been printed and tried by its author; these trials remain limited "
-            "and are neither a certification nor a validation by a workshop. The bench is provided free of charge, without "
+            "<b>Liability</b>: a first unit of the bench has been printed, tried and validated by its author; these trials are neither a certification nor a validation by a workshop. The bench is provided free of charge, without "
             "warranty to the extent permitted by law, and used at your own risk; this does not exclude liability for personal "
             "injury, liability for defective products, or liability for fraud or gross negligence. Trimming a wing must follow its manufacturer's values and procedures, and a measuring error can change "
             "how the wing behaves in flight: have any re-trim checked by a qualified workshop. The bench stays on the table only "
@@ -129,9 +128,9 @@ TEXTES = {
         "taille": "%d Ko",
         "cree": "Développé et offert gratuitement par WeSoar.",
         "autres": "Autres outils WeSoar :",
-        "outils": [("https://trim.wesoar.fr/", "Wing Trim, l'application de mesure et de calage des suspentes (compte gratuit limité)"),
-                   ("https://soundings.wesoar.fr/fr/", "PG Soundings, la prévision du vol libre dans Windy"),
-                   ("https://viewer.wesoar.fr/", "Viewer 3D, pour revoir vos vols sur le relief et les partager")],
+        "outils": [("https://trim.wesoar.fr/", "WS Trim, l'application de mesure et de calage des suspentes (compte gratuit limité)"),
+                   ("https://soundings.wesoar.fr/fr/", "WS Sounding, la prévision du vol libre dans Windy"),
+                   ("https://viewer.wesoar.fr/", "WS Viewer, pour revoir vos vols sur le relief et les partager")],
         "pied": "Page construite automatiquement à partir du dépôt : elle reflète l'état des fichiers au dernier changement.",
         "mentions_titre": "Mentions légales",
         "mentions": lambda e, h, base: [
@@ -146,13 +145,12 @@ TEXTES = {
             '<a href="https://ohwr.org/cern_ohl_s_v2.txt">CERN-OHL-S-2.0</a>, son code sous <a href="%s/blob/main/LICENSE">licence '
             'ISC</a>, ses images, schémas de montage, textes et cotes des télémètres sous licence '
             '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a>, '
-            "en citant « Banc de calage parapente, conçu par "
+            "en citant « WS Trimmer, banc de calage parapente, conçu par "
             "Alexandre Pereira, © 2026 WeSoar SASU », la licence du fichier et le lien du dépôt. Le nom et le logo WeSoar "
             "appartiennent à l'éditeur et n'entrent dans aucune de ces licences. La police Mona Sans est utilisée sous "
             '<a href="%smona-sans-OFL.txt">licence SIL Open Font License</a>. %s et les autres marques citées appartiennent '
             "à leurs titulaires ; le banc n'a aucun lien avec eux." % (DEPOT, base, MARQUES),
-            "<b>Responsabilité</b> : un premier exemplaire du banc a été imprimé et essayé par son auteur ; ces essais restent "
-            "limités et ne valent ni certification ni validation par un atelier. Le banc est fourni gratuitement, sans garantie "
+            "<b>Responsabilité</b> : un premier exemplaire du banc a été imprimé, essayé et validé par son auteur ; ces essais ne valent ni certification ni validation par un atelier. Le banc est fourni gratuitement, sans garantie "
             "dans les limites permises par la loi, et utilisé aux risques de l'utilisateur ; cela n'exclut ni la responsabilité "
             "pour les dommages corporels, ni celle du fait des produits défectueux, ni celle due au dol ou à la faute lourde. "
             "Le calage d'une aile doit respecter les valeurs et les procédures de son constructeur, "

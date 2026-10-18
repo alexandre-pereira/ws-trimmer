@@ -1,9 +1,9 @@
-# Paraglider trimming bench
+# WS Trimmer, paraglider trimming bench
 
 [Version française](README.md)
 
-> **Warning**: a first unit of this bench has been printed and tried by its author; these trials
-> remain limited and are neither a certification nor a validation by a workshop. The bench is
+> **Warning**: a first unit of this bench has been printed, tried and validated by its author;
+> these trials are neither a certification nor a validation by a workshop. The bench is
 > provided free of charge, without warranty to the extent permitted by law, and used at your own
 > risk; this does not exclude liability for personal injury, liability for defective products,
 > or liability for fraud or gross negligence. Trimming a wing
@@ -167,8 +167,7 @@ holder.
 - The OpenSCAD models are in `scad/`, the scripts that regenerate the STL files, the images
   and this site in `outils/`. Repository: <https://github.com/alexandre-pereira/ws-trimmer>,
   site: <https://trimming-tools.wesoar.fr>.
-- A first unit has been printed and tried by its author; these trials remain limited and are
-  neither a certification nor a validation by a workshop. Follow the wing manufacturer's values
+- A first unit has been printed, tried and validated by its author; these trials are neither a certification nor a validation by a workshop. Follow the wing manufacturer's values
   and procedures, and have any re-trim checked by a qualified workshop.
 
 ## Licence
@@ -184,7 +183,7 @@ distributes it.
 | Mona Sans typeface (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) | [SIL OFL 1.1](https://openfontlicense.org), from its authors |
 | WeSoar name and logo (`outils/wesoar.svg`, `outils/wesoar-mark.svg`) | none: they belong to WeSoar |
 
-Any copy credits "Paraglider trimming bench, designed by Alexandre Pereira, © 2026 WeSoar SASU",
+Any copy credits "WS Trimmer, paraglider trimming bench, designed by Alexandre Pereira, © 2026 WeSoar SASU",
 the file's licence and the repository link. Whoever modifies a file says so: the CERN-OHL-S
 requires a dated notice briefly describing the change, CC BY-SA requires changes to be
 indicated; a modified version of these files is shared under the same licence.
