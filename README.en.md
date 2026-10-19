@@ -166,7 +166,7 @@ holder.
   checked.
 - The OpenSCAD models are in `scad/`, the scripts that regenerate the STL files, the images
   and this site in `outils/`. Repository: <https://github.com/alexandre-pereira/ws-trimmer>,
-  site: <https://trimming-tools.wesoar.fr>.
+  site: <https://trimmer.wesoar.fr>.
 - A first unit has been printed, tried and validated by its author; these trials are neither a certification nor a validation by a workshop. Follow the wing manufacturer's values
   and procedures, and have any re-trim checked by a qualified workshop.
 
@@ -197,4 +197,4 @@ built from these files must not bear the WeSoar name or logo.
 
 Details are in [LICENSE](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSE)
 (the French version is authoritative), the legal notice at the foot of the
-[bench page](https://trimming-tools.wesoar.fr/#legal).
+[bench page](https://trimmer.wesoar.fr/#legal).

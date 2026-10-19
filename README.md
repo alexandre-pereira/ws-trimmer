@@ -167,7 +167,7 @@ Réglez le télémètre pour mesurer **depuis sa face avant** : elle affleure le
   choix de conception, les cotes, les prix relevés, les variantes écartées et ce qui a été
   vérifié.
 - Les modèles OpenSCAD sont dans `scad/`, les scripts qui regénèrent STL, images et ce site
-  dans `outils/`. Dépôt : <https://github.com/alexandre-pereira/ws-trimmer>, site : <https://trimming-tools.wesoar.fr>.
+  dans `outils/`. Dépôt : <https://github.com/alexandre-pereira/ws-trimmer>, site : <https://trimmer.wesoar.fr>.
 - Un premier exemplaire a été imprimé, essayé et validé par son auteur ; ces essais ne valent ni certification ni validation par un atelier. Respectez les valeurs et les procédures
   du constructeur de l'aile, et faites contrôler tout recalage par un atelier qualifié.
 
@@ -197,4 +197,4 @@ fichiers sources (ceux du vendeur, s'il les a modifiés). Une version modifiée 
 fichiers ne porte ni le nom ni le logo WeSoar.
 
 Le détail est dans [LICENSE](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSE),
-les mentions légales au pied de la [page du banc](https://trimming-tools.wesoar.fr/fr/#legal).
+les mentions légales au pied de la [page du banc](https://trimmer.wesoar.fr/fr/#legal).
