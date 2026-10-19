@@ -660,8 +660,10 @@ logo, icône de l'onglet) est celui de tous les outils WeSoar ; les mêmes fichi
 le dépôt de WS Sounding (`scripts/`). Une modification s'y reporte telle quelle ; ce qui
 est propre à cette page reste dans `site.py`.
 
-La police Mona Sans (`outils/mona-sans.woff2`, licence SIL OFL dans `outils/mona-sans-OFL.txt`)
-est copiée dans le site et servie par lui : la page ne charge rien depuis d'autres sites. Le pied
+Les polices de la charte WeSoar, Mona Sans pour le texte (`outils/mona-sans.woff2`, licence SIL OFL
+dans `outils/mona-sans-OFL.txt`) et Literata pour les grands titres (`outils/literata.woff2`,
+`outils/literata-italic.woff2`, `outils/literata-OFL.txt`), sont copiées dans le site et servies par
+lui : la page ne charge rien depuis d'autres sites. Le pied
 de page porte les mentions légales (éditeur, hébergeur, données personnelles, propriété
 intellectuelle, responsabilité), tirées de `EDITEUR` et `HEBERGEUR` en tête de `site.py`. Ce
 qui n'est pas encore connu (capital, siège, immatriculation, téléphone) est écrit
@@ -673,8 +675,8 @@ Licences, détaillées dans `LICENSE` (titulaire des droits : WeSoar SASU ; la v
 fait foi) : les modèles et les STL (`scad/`, `stl/`) sont sous licence CERN-OHL-S-2.0 (texte
 dans `LICENSES/`), le code (scripts de `outils/`, `outils/wesoar.css`, `.github/`) sous licence
 ISC, les images, les documents et les données (`apercu/`, README, NOTES, `outils/LISEZMOI.md`,
-`outils/lasers.json`) sous licence CC BY-SA 4.0 ; la police Mona Sans est sous SIL OFL 1.1, et
-le nom WeSoar et son logo n'entrent dans aucune de ces licences.
+`outils/lasers.json`) sous licence CC BY-SA 4.0 ; les polices Mona Sans et Literata sont sous SIL OFL 1.1,
+et le nom WeSoar et son logo n'entrent dans aucune de ces licences.
 
 ## Ce qui a été vérifié, et ce qui ne l'a pas été
 

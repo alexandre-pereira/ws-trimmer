@@ -181,7 +181,7 @@ le diffuse.
 | Modèles OpenSCAD (`scad/`) et fichiers STL (`stl/`) | [CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt) (texte dans [`LICENSES/`](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSES/CERN-OHL-S-2.0.txt)) |
 | Scripts de `outils/` (`*.py`, `generer_stl.mjs`), `outils/wesoar.css`, `outils/package*.json`, `.github/`, configuration du dépôt | [ISC](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSE) |
 | Images (`apercu/`), documents (`README.md`, `README.en.md`, `NOTES.md`, `outils/LISEZMOI.md`), données (`outils/lasers.json`) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) |
-| Police Mona Sans (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) | [SIL OFL 1.1](https://openfontlicense.org), de ses auteurs |
+| Polices Mona Sans (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) et Literata (`outils/literata.woff2`, `outils/literata-italic.woff2`, `outils/literata-OFL.txt`) | [SIL OFL 1.1](https://openfontlicense.org), de leurs auteurs |
 | Nom et logo WeSoar (`outils/wesoar.svg`, `outils/wesoar-mark.svg`) | aucune : ils appartiennent à WeSoar |
 
 Toute copie cite « WS Trimmer, banc de calage parapente, conçu par Alexandre Pereira, © 2026 WeSoar SASU »,

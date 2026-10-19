@@ -7,9 +7,10 @@ et en français (dans fr/, depuis README.md) : ce qui change dans un README se r
 Il est reconstruit à chaque modification du dépôt par GitHub Actions (.github/workflows/pages.yml),
 donc la page suit le dossier : ce qui change dans les README, stl/ ou apercu/ change sur le site.
 
-L'habillage (wesoar.css, wesoar.svg, wesoar-mark.svg) est celui de tous les outils WeSoar : les
-mêmes fichiers sont dans le dépôt de chaque outil. La police Mona Sans (mona-sans.woff2, licence SIL
-OFL, avec mona-sans-OFL.txt) est servie par le site lui-même, sans passer par Google Fonts.
+L'habillage (wesoar.css, wesoar.svg, wesoar-mark.svg, les polices) est celui de tous les outils WeSoar :
+les mêmes fichiers sont dans le dépôt de chaque outil. Les polices de la charte, Mona Sans pour le texte
+(mona-sans.woff2) et Literata pour les grands titres (literata.woff2, literata-italic.woff2), licence SIL
+OFL avec leurs fichiers OFL, sont servies par le site lui-même, sans passer par Google Fonts.
 
 Le pied de page porte les mentions légales, tirées de EDITEUR et HEBERGEUR : la fabrication du site
 signale les champs encore « à compléter ».
@@ -167,28 +168,30 @@ TEXTES = {
 STYLE = """
 .tt-vues { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 12px; }
 .tt-vues figure { margin: 0; padding: 10px; }
-.tt-vues img { display: block; width: 100%; border-radius: 8px; background: #fff; }
-.tt-vues figcaption { margin-top: 8px; padding: 0 4px 2px; font-size: .88rem; font-weight: 600; }
+.tt-vues img { display: block; width: 100%; border-radius: var(--wf-radius-s); background: #fff; }
+.tt-vues figcaption { margin-top: 8px; padding: 0 4px 2px; font-size: var(--wf-small); font-weight: 650; }
 .tt-cols { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: clamp(28px, 5vw, 44px); }
 @media (min-width: 60rem) { .tt-cols { grid-template-columns: 14rem minmax(0, 1fr); gap: 32px; align-items: start; } .tt-sommaire { position: sticky; top: 16px; } }
-.tt-sommaire { padding: 16px 18px; font-size: .9rem; }
-.tt-sommaire h2 { margin: 0 0 8px; font-size: .74rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--wf-muted); }
+.tt-sommaire { padding: 16px 18px; font-size: var(--wf-text-s); }
+.tt-sommaire h2 { margin: 0 0 10px; font-size: var(--wf-eyebrow); font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--wf-accent); }
 .tt-sommaire ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
 .tt-sommaire a { color: var(--wf-ink); text-decoration: none; }
-.tt-sommaire a:hover { color: var(--wf-accent-strong); text-decoration: underline; }
+.tt-sommaire a:hover { color: var(--wf-accent); text-decoration: underline; }
 .tt-fichiers { margin-bottom: 28px; scroll-margin-top: 16px; }
 .tt-fichiers h2 { margin: 0 0 6px; }
 .tt-fichiers ul + h2 { margin-top: 24px; }
 .tt-fichiers p { margin: 0 0 14px; color: var(--wf-muted); }
 .tt-fichiers ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: 8px; }
 .tt-fichiers li { margin: 0; }
-.tt-fichiers .wf-btn { display: block; padding: 9px 12px; font: 600 .85rem var(--wf-mono); overflow-wrap: anywhere; }
-.tt-fichiers .wf-btn small { display: block; margin-top: 2px; font: 400 .8rem var(--wf-font); color: var(--wf-muted); }
-.tt-fichiers .tt-vue { display: inline-block; margin: 2px 0 0 4px; font-size: .82rem; }
-.tt-avertissement { margin: 0 0 20px; padding: 14px 18px; border-left: 4px solid var(--wf-accent); border-radius: var(--wf-radius-s); background: var(--wf-tint); }
+.tt-fichiers .wf-btn { display: block; padding: 10px 14px; border-width: 1px; border-color: var(--wf-line); border-radius: var(--wf-radius-s); background: var(--wf-surface); font: 600 var(--wf-small)/1.3 var(--wf-mono); text-align: left; overflow-wrap: anywhere; }
+.tt-fichiers .wf-btn:hover { border-color: var(--wf-ink); background: var(--wf-ink); }
+.tt-fichiers .wf-btn small { display: block; margin-top: 3px; font: 400 var(--wf-small) var(--wf-font); color: var(--wf-muted); }
+.tt-fichiers .wf-btn:hover small { color: var(--wf-sand-2); }
+.tt-fichiers .tt-vue { display: inline-block; margin: 2px 0 0 4px; font-size: var(--wf-small); }
+.tt-avertissement { margin: 0 0 20px; padding: 14px 18px; border-left: 3px solid var(--wf-accent); border-radius: var(--wf-radius-s); background: var(--wf-tint); }
 .tt-avertissement p { margin: 0; }
 .tt-avertissement p + p { margin-top: 10px; }
-.tt-mentions summary { cursor: pointer; color: var(--wf-ink); font-weight: 700; }
+.tt-mentions summary { cursor: pointer; color: var(--wf-ink); font-weight: 650; }
 .tt-mentions p { margin: 8px 0 0; }
 """
 
@@ -289,11 +292,14 @@ def page(langue, logo, style, stls, lasers, site):
 {renvoi}<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(titre)}</title>
 <meta name="description" content="{html.escape(t["sous_titre"])}">
-<meta name="theme-color" content="#f5f7f9">
+<meta name="theme-color" content="#f7f4ee">
 {social}
 <link rel="icon" type="image/svg+xml" href="{base}favicon.svg">
 <link rel="preload" href="{base}mona-sans.woff2" as="font" type="font/woff2" crossorigin>
-<style>@font-face {{ font-family: 'Mona Sans'; src: url('{base}mona-sans.woff2') format('woff2'); font-weight: 400 800; font-display: swap; }}
+<link rel="preload" href="{base}literata.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face {{ font-family: 'Mona Sans'; src: url('{base}mona-sans.woff2') format('woff2'); font-weight: 200 900; font-display: swap; }}
+@font-face {{ font-family: 'Literata'; src: url('{base}literata.woff2') format('woff2'); font-weight: 400 600; font-display: swap; }}
+@font-face {{ font-family: 'Literata'; font-style: italic; src: url('{base}literata-italic.woff2') format('woff2'); font-weight: 400 600; font-display: swap; }}
 {style}</style>
 </head>
 <body>
@@ -356,8 +362,9 @@ def main():
         shutil.copy(cname, OUT)
         site = "https://" + lire(cname).strip()
     shutil.copy(os.path.join(OUTILS, "wesoar-mark.svg"), os.path.join(OUT, "favicon.svg"))
-    # la police est servie avec la page, et sa licence (SIL OFL) l'accompagne
-    for f in ("mona-sans.woff2", "mona-sans-OFL.txt"):
+    # les polices sont servies avec la page, et leur licence (SIL OFL) les accompagne : Mona Sans pour le
+    # texte, Literata (romain et italique) pour les grands titres, comme le veut la charte WeSoar
+    for f in ("mona-sans.woff2", "mona-sans-OFL.txt", "literata.woff2", "literata-italic.woff2", "literata-OFL.txt"):
         shutil.copy(os.path.join(OUTILS, f), OUT)
 
     # le logo WeSoar est dessiné dans la page, pour prendre la couleur du texte

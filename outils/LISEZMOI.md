@@ -36,6 +36,8 @@ Google Fonts. Le fichier de la police est celui du projet officiel, sans modific
 `fonts/webfonts/variable/MonaSansVF[opsz,wght].woff2` de l'archive `mona-sans-webfonts-v2.0.27.zip`
 (version 2.0.27, <https://github.com/github/mona-sans/releases/tag/v2.0.27>), seulement renommé ;
 `mona-sans-OFL.txt` est le `OFL.txt` de la même archive. Pour le mettre à jour, reprendre le même
-fichier dans une version plus récente, sans le découper ni le convertir. Les mentions légales du pied de page (éditeur, hébergeur) sont dans `EDITEUR` et
+fichier dans une version plus récente, sans le découper ni le convertir. Il copie de même la police des
+grands titres, Literata (`literata.woff2`, `literata-italic.woff2`, licence `literata-OFL.txt`), reprise des
+fichiers de la charte graphique WeSoar (latin, graisses 400 à 600). Les mentions légales du pied de page (éditeur, hébergeur) sont dans `EDITEUR` et
 `HEBERGEUR` en tête de `site.py` ; tant qu'un champ contient « à compléter », la fabrication du
 site le signale.

@@ -180,7 +180,7 @@ distributes it.
 | OpenSCAD models (`scad/`) and STL files (`stl/`) | [CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt) (text in [`LICENSES/`](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSES/CERN-OHL-S-2.0.txt)) |
 | Scripts in `outils/` (`*.py`, `generer_stl.mjs`), `outils/wesoar.css`, `outils/package*.json`, `.github/`, repository configuration | [ISC](https://github.com/alexandre-pereira/ws-trimmer/blob/main/LICENSE) |
 | Images (`apercu/`), documents (`README.md`, `README.en.md`, `NOTES.md`, `outils/LISEZMOI.md`), data (`outils/lasers.json`) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-| Mona Sans typeface (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) | [SIL OFL 1.1](https://openfontlicense.org), from its authors |
+| Mona Sans (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) and Literata (`outils/literata.woff2`, `outils/literata-italic.woff2`, `outils/literata-OFL.txt`) typefaces | [SIL OFL 1.1](https://openfontlicense.org), from their authors |
 | WeSoar name and logo (`outils/wesoar.svg`, `outils/wesoar-mark.svg`) | none: they belong to WeSoar |
 
 Any copy credits "WS Trimmer, paraglider trimming bench, designed by Alexandre Pereira, © 2026 WeSoar SASU",

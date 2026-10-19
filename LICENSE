@@ -54,6 +54,10 @@ Ne sont couverts par aucune de ces licences :
   fonts/webfonts/variable/MonaSansVF[opsz,wght].woff2, renommé, de l'archive
   mona-sans-webfonts-v2.0.27.zip (https://github.com/github/mona-sans/releases/tag/v2.0.27) ;
   mona-sans-OFL.txt est le OFL.txt de la même archive ;
+- la police Literata (outils/literata.woff2, outils/literata-italic.woff2), des Literata
+  Project Authors (https://github.com/googlefonts/literata), sous SIL Open Font License 1.1
+  (outils/literata-OFL.txt). Les fichiers sont ceux de la charte graphique WeSoar : la police
+  réduite au latin et aux graisses 400 à 600, comme sa licence le permet ;
 - le texte des licences (LICENSES/), qui appartient à ses auteurs.
 
 English summary (the French version is authoritative): © 2026 WeSoar SASU. The bench is
@@ -79,7 +83,9 @@ WeSoar's written permission. An unmodified copy of the repository may keep them,
 credit WeSoar as the original distributor; a modified version, or a bench built from
 these files, must not bear the WeSoar name or logo, nor suggest that it comes from or is
 endorsed by WeSoar. The Mona Sans typeface is under the SIL Open Font License 1.1: the
-unmodified MonaSansVF[opsz,wght].woff2 from the official v2.0.27 release, renamed.
+unmodified MonaSansVF[opsz,wght].woff2 from the official v2.0.27 release, renamed. The
+Literata typeface (outils/literata*.woff2, subset to Latin and weights 400 to 600) is under
+the same licence (outils/literata-OFL.txt).
 
 
 ISC License
