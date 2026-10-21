@@ -173,7 +173,7 @@ Réglez le télémètre pour mesurer **depuis sa face avant** : elle affleure le
 
 ## Licence
 
-© 2026 WeSoar SASU. Le banc est conçu par Alexandre Pereira ; WeSoar SASU en détient les droits et
+© 2026 WeSoar. Le banc est conçu par Alexandre Pereira ; WeSoar en détient les droits et
 le diffuse.
 
 | Fichiers | Licence |
@@ -184,7 +184,7 @@ le diffuse.
 | Polices Mona Sans (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) et Literata (`outils/literata.woff2`, `outils/literata-italic.woff2`, `outils/literata-OFL.txt`) | [SIL OFL 1.1](https://openfontlicense.org), de leurs auteurs |
 | Nom et logo WeSoar (`outils/wesoar.svg`, `outils/wesoar-mark.svg`) | aucune : ils appartiennent à WeSoar |
 
-Toute copie cite « WS Trimmer, banc de calage parapente, conçu par Alexandre Pereira, © 2026 WeSoar SASU »,
+Toute copie cite « WS Trimmer, banc de calage parapente, conçu par Alexandre Pereira, © 2026 WeSoar »,
 la licence du fichier et le lien du dépôt. Qui modifie un fichier l'indique : la CERN-OHL-S
 demande une mention datée qui décrit brièvement la modification, la CC BY-SA de signaler les
 modifications ; une version modifiée de ces fichiers se diffuse sous la même licence.

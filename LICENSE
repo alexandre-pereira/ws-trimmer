@@ -3,7 +3,7 @@ Banc de calage parapente : licences
 
 Ce fichier est rédigé en français, suivi d'un résumé en anglais : la version française fait foi.
 
-© 2026 WeSoar SASU. Le banc est conçu par Alexandre Pereira ; WeSoar SASU est titulaire
+© 2026 WeSoar. Le banc est conçu par Alexandre Pereira ; WeSoar est titulaire
 des droits et le diffuse. Les fichiers sources sont publiés à l'adresse
 https://github.com/alexandre-pereira/ws-trimmer (adresse des sources, « Source
 Location » au sens de la CERN-OHL-S). Ce dépôt réunit trois sortes de fichiers, sous trois
@@ -36,7 +36,7 @@ licences :
   modifications ; ce qui en est tiré se partage sous la même licence.
 
 Attribution attendue, pour tous ces fichiers : « Banc de calage parapente, conçu par
-Alexandre Pereira, © 2026 WeSoar SASU », la licence du fichier (CERN-OHL-S-2.0, ISC ou
+Alexandre Pereira, © 2026 WeSoar », la licence du fichier (CERN-OHL-S-2.0, ISC ou
 CC BY-SA 4.0) et l'adresse https://github.com/alexandre-pereira/ws-trimmer.
 
 Ne sont couverts par aucune de ces licences :
@@ -60,8 +60,8 @@ Ne sont couverts par aucune de ces licences :
   réduite au latin et aux graisses 400 à 600, comme sa licence le permet ;
 - le texte des licences (LICENSES/), qui appartient à ses auteurs.
 
-English summary (the French version is authoritative): © 2026 WeSoar SASU. The bench is
-designed by Alexandre Pereira; WeSoar SASU owns the rights and distributes it. Source
+English summary (the French version is authoritative): © 2026 WeSoar. The bench is
+designed by Alexandre Pereira; WeSoar owns the rights and distributes it. Source
 Location: https://github.com/alexandre-pereira/ws-trimmer.
 - Hardware: the OpenSCAD models (scad/) and the STL files made from them (stl/) are under
   the CERN Open Hardware Licence version 2, strongly reciprocal variant (CERN-OHL-S-2.0),
@@ -75,7 +75,7 @@ Location: https://github.com/alexandre-pereira/ws-trimmer.
 - Images, documents and data: apercu/, README.md, README.en.md, NOTES.md,
   outils/LISEZMOI.md and outils/lasers.json (distance meter dimensions) are under CC BY-SA
   4.0 (https://creativecommons.org/licenses/by-sa/4.0/legalcode); changes must be indicated.
-Credit: "Paraglider trimming bench, designed by Alexandre Pereira, © 2026 WeSoar SASU",
+Credit: "Paraglider trimming bench, designed by Alexandre Pereira, © 2026 WeSoar",
 the file's licence and the repository address. The WeSoar name and logo
 (outils/wesoar.svg, outils/wesoar-mark.svg, and the same design wherever it appears)
 belong to WeSoar and are covered by none of these licences: they may only be used with
@@ -90,7 +90,7 @@ the same licence (outils/literata-OFL.txt).
 
 ISC License
 
-Copyright (c) 2026 WeSoar SASU
+Copyright (c) 2026 WeSoar
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above

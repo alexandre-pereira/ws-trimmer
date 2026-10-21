@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: CERN-OHL-S-2.0
-// © 2026 WeSoar SASU, conception Alexandre Pereira
+// © 2026 WeSoar, conception Alexandre Pereira
 // Source : https://github.com/alexandre-pereira/ws-trimmer
 // ============================================================
 //  Banc de calage parapente compact et plat, à poser sur un chant de table

@@ -96,13 +96,13 @@ TEXTES = {
             "<b>Personal data</b>: this page sets no cookie, does not measure its audience and loads nothing from other sites. "
             "It only keeps, in your browser, the language you chose. As with any web page, the host (GitHub) receives the "
             "visitor's IP address.",
-            "<b>Intellectual property</b>: © 2026 WeSoar SASU. The bench is designed by Alexandre Pereira; WeSoar SASU owns "
+            "<b>Intellectual property</b>: © 2026 WeSoar. The bench is designed by Alexandre Pereira; WeSoar owns "
             'the rights and distributes it. Its OpenSCAD models and STL files are published under the '
             '<a href="https://ohwr.org/cern_ohl_s_v2.txt">CERN-OHL-S-2.0</a> licence, its code under the '
             '<a href="%s/blob/main/LICENSE">ISC licence</a>, its pictures, assembly diagrams, texts and distance meter dimensions '
             'under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> licence, '
             "crediting “WS Trimmer, paraglider trimming bench, designed "
-            "by Alexandre Pereira, © 2026 WeSoar SASU”, the file's licence and the repository link. The WeSoar name and logo "
+            "by Alexandre Pereira, © 2026 WeSoar”, the file's licence and the repository link. The WeSoar name and logo "
             "belong to the publisher and are covered by none of these licences. The Mona Sans typeface is used under "
             'the <a href="%smona-sans-OFL.txt">SIL Open Font License</a>. %s and the other brands cited belong to their '
             "owners; the bench is not affiliated with them." % (DEPOT, base, MARQUES),
@@ -141,13 +141,13 @@ TEXTES = {
             "<b>Données personnelles</b> : cette page ne pose aucun cookie, ne mesure pas l'audience et ne charge rien depuis "
             "d'autres sites. Elle retient seulement, dans votre navigateur, la langue choisie. Comme pour toute page web, "
             "l'hébergeur (GitHub) reçoit l'adresse IP du visiteur.",
-            "<b>Propriété intellectuelle</b> : © 2026 WeSoar SASU. Le banc est conçu par Alexandre Pereira ; WeSoar SASU en "
+            "<b>Propriété intellectuelle</b> : © 2026 WeSoar. Le banc est conçu par Alexandre Pereira ; WeSoar en "
             'détient les droits et le diffuse. Ses modèles OpenSCAD et ses fichiers STL sont publiés sous licence '
             '<a href="https://ohwr.org/cern_ohl_s_v2.txt">CERN-OHL-S-2.0</a>, son code sous <a href="%s/blob/main/LICENSE">licence '
             'ISC</a>, ses images, schémas de montage, textes et cotes des télémètres sous licence '
             '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a>, '
             "en citant « WS Trimmer, banc de calage parapente, conçu par "
-            "Alexandre Pereira, © 2026 WeSoar SASU », la licence du fichier et le lien du dépôt. Le nom et le logo WeSoar "
+            "Alexandre Pereira, © 2026 WeSoar », la licence du fichier et le lien du dépôt. Le nom et le logo WeSoar "
             "appartiennent à l'éditeur et n'entrent dans aucune de ces licences. La police Mona Sans est utilisée sous "
             '<a href="%smona-sans-OFL.txt">licence SIL Open Font License</a>. %s et les autres marques citées appartiennent '
             "à leurs titulaires ; le banc n'a aucun lien avec eux." % (DEPOT, base, MARQUES),

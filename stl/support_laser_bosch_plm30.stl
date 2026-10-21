@@ -1,4 +1,4 @@
-solid trimming-tools CERN-OHL-S-2.0 (c) 2026 WeSoar SASU
+solid trimming-tools CERN-OHL-S-2.0 (c) 2026 WeSoar
   facet normal 0.751841411423408 0.6593439861474871 0
     outer loop
       vertex 42.086708068847656 22.21752166748047 25.799999237060547
@@ -4367,4 +4367,4 @@ solid trimming-tools CERN-OHL-S-2.0 (c) 2026 WeSoar SASU
       vertex 19.663291931152344 11.782476425170898 94.5
     endloop
   endfacet
-endsolid trimming-tools CERN-OHL-S-2.0 (c) 2026 WeSoar SASU
+endsolid trimming-tools CERN-OHL-S-2.0 (c) 2026 WeSoar

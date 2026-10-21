@@ -172,7 +172,7 @@ holder.
 
 ## Licence
 
-© 2026 WeSoar SASU. The bench is designed by Alexandre Pereira; WeSoar SASU owns the rights and
+© 2026 WeSoar. The bench is designed by Alexandre Pereira; WeSoar owns the rights and
 distributes it.
 
 | Files | Licence |
@@ -183,7 +183,7 @@ distributes it.
 | Mona Sans (`outils/mona-sans.woff2`, `outils/mona-sans-OFL.txt`) and Literata (`outils/literata.woff2`, `outils/literata-italic.woff2`, `outils/literata-OFL.txt`) typefaces | [SIL OFL 1.1](https://openfontlicense.org), from their authors |
 | WeSoar name and logo (`outils/wesoar.svg`, `outils/wesoar-mark.svg`) | none: they belong to WeSoar |
 
-Any copy credits "WS Trimmer, paraglider trimming bench, designed by Alexandre Pereira, © 2026 WeSoar SASU",
+Any copy credits "WS Trimmer, paraglider trimming bench, designed by Alexandre Pereira, © 2026 WeSoar",
 the file's licence and the repository link. Whoever modifies a file says so: the CERN-OHL-S
 requires a dated notice briefly describing the change, CC BY-SA requires changes to be
 indicated; a modified version of these files is shared under the same licence.

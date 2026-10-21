@@ -11,7 +11,7 @@ const src = path.join(racine, "scad");
 const outPrint = path.join(racine, "stl");
 for (const d of [outPrint, "./asm", "./asm_plie"]) fs.mkdirSync(d, { recursive: true });
 // nom du solide écrit dans chaque STL, en ASCII : le dépôt, la licence des modèles et le titulaire des droits
-const SOLIDE = "trimming-tools CERN-OHL-S-2.0 (c) 2026 WeSoar SASU";
+const SOLIDE = "trimming-tools CERN-OHL-S-2.0 (c) 2026 WeSoar";
 
 function stats(stl) {
   const vs = [...stl.matchAll(/vertex\s+(\S+)\s+(\S+)\s+(\S+)/g)].map(m => [m[1], m[2], m[3]]);

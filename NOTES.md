@@ -671,7 +671,7 @@ qui n'est pas encore connu (capital, siège, immatriculation, téléphone) est �
 L'avertissement qui ouvre les README (une citation `>`) est repris en tête de la page, avant
 les fichiers à télécharger.
 
-Licences, détaillées dans `LICENSE` (titulaire des droits : WeSoar SASU ; la version française
+Licences, détaillées dans `LICENSE` (titulaire des droits : WeSoar ; la version française
 fait foi) : les modèles et les STL (`scad/`, `stl/`) sont sous licence CERN-OHL-S-2.0 (texte
 dans `LICENSES/`), le code (scripts de `outils/`, `outils/wesoar.css`, `.github/`) sous licence
 ISC, les images, les documents et les données (`apercu/`, README, NOTES, `outils/LISEZMOI.md`,
