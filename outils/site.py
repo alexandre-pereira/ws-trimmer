@@ -14,6 +14,9 @@ OFL avec leurs fichiers OFL, sont servies par le site lui-même, sans passer par
 
 Le pied de page porte les mentions légales, tirées de EDITEUR et HEBERGEUR : la fabrication du site
 signale les champs encore « à compléter ».
+
+Tant que FERME est vrai, le site ne montre pas le banc : chaque langue n'a qu'une page « pas encore
+disponible », sans fichiers, sans images ni lien vers le dépôt, que les moteurs de recherche n'indexent pas.
 """
 import os, re, shutil, sys, html, json
 import markdown
@@ -28,6 +31,8 @@ LANGUES = ["en", "fr"]
 CLE_LANGUE = "wf-lang"
 # image des aperçus de lien (réseaux sociaux, messageries)
 IMAGE_APERCU = "apercu/banc_ouvert_avant.png"
+# le banc est caché au public : le site n'est qu'une page d'attente (False pour le publier)
+FERME = True
 
 # éditeur du site, pour les mentions légales (LCEN, art. 1-1) : la société WeSoar, qui diffuse le
 # banc. Ce qui n'est pas encore connu porte la marque A_COMPLETER (« […à compléter] ») : la page
@@ -66,9 +71,6 @@ def ligne_editeur(e, capital, siege, tva, telephone):
         '<a href="mailto:%s">%s</a>' % (e["email"], e["email"]),
     ] if x)
 
-# « outils » : les autres outils WeSoar, au pied de page. Ils ne sont pas tous gratuits : WS Trim a un
-# compte gratuit limité (10 mesures par mois, certaines voiles EN C, EN D et CCC ; les autres demandent
-# un compte pro), d'où « compte gratuit limité ».
 TEXTES = {
     "en": {
         "readme": "README.en.md",
@@ -83,10 +85,7 @@ TEXTES = {
         "supports": "Leica DISTO and Bosch models under €500, at the manufacturer's dimensions (length × width × thickness) plus 0.5 mm of clearance. Other distance meter: see further down.",
         "taille": "%d kB",
         "cree": "Developed and offered free of charge by WeSoar.",
-        "autres": "Other WeSoar tools:",
-        "outils": [("https://trim.wesoar.fr/", "WS Trim, the app to measure and trim your lines (limited free account)"),
-                   ("https://soundings.wesoar.fr/", "WS Sounding, the free-flight forecast inside Windy"),
-                   ("https://viewer.wesoar.fr/", "WS Viewer, to replay your flights over the terrain and share them")],
+        "ferme": "This page is not available yet.",
         "pied": "Page built automatically from the repository: it reflects the files as of the last change.",
         "mentions_titre": "Legal notice",
         "mentions": lambda e, h, base: [
@@ -128,10 +127,7 @@ TEXTES = {
         "supports": "Leica DISTO et Bosch à moins de 500 €, aux cotes du constructeur (longueur × largeur × épaisseur) plus 0,5 mm de jeu. Autre télémètre : voir plus bas.",
         "taille": "%d Ko",
         "cree": "Développé et offert gratuitement par WeSoar.",
-        "autres": "Autres outils WeSoar :",
-        "outils": [("https://trim.wesoar.fr/", "WS Trim, l'application de mesure et de calage des suspentes (compte gratuit limité)"),
-                   ("https://soundings.wesoar.fr/fr/", "WS Sounding, la prévision du vol libre dans Windy"),
-                   ("https://viewer.wesoar.fr/", "WS Viewer, pour revoir vos vols sur le relief et les partager")],
+        "ferme": "Cette page n'est pas encore disponible.",
         "pied": "Page construite automatiquement à partir du dépôt : elle reflète l'état des fichiers au dernier changement.",
         "mentions_titre": "Mentions légales",
         "mentions": lambda e, h, base: [
@@ -262,8 +258,6 @@ def page(langue, logo, style, stls, lasers, site):
     choix = "".join('<a href="%s" lang="%s" hreflang="%s"%s onclick="try{localStorage.setItem(\'%s\',\'%s\')}catch(e){}">%s</a>'
                     % (vers(langue, l), l, l, ' aria-current="page"' if l == langue else "", CLE_LANGUE, l, l.upper())
                     for l in LANGUES)
-    outils = "".join('<li><a href="%s">%s</a></li>' % (url, html.escape(nom)) for url, nom in t["outils"])
-    mentions = "\n".join("<p>%s</p>" % ligne for ligne in t["mentions"](EDITEUR, HEBERGEUR, base))
     # la page par défaut envoie vers sa langue le visiteur qui en a choisi une autre, ou dont le
     # navigateur est dans une autre langue du site tant qu'il n'a rien choisi
     renvoi = ""
@@ -332,16 +326,58 @@ def page(langue, logo, style, stls, lasers, site):
 </div>
 </div>
 </main>
-<footer class="wf-foot"><div class="wf-foot-in">
-<div class="wf-made">{logo}<span>{t["cree"]}</span></div>
-<ul class="wf-tools"><li>{t["autres"]}</li>{outils}</ul>
-<p>{t["pied"]}</p>
+{pied(t, logo, base, True)}
+</body>
+</html>
+"""
+
+
+def pied(t, logo, base, banc):
+    """Le pied de page : la signature WeSoar et les mentions légales. Sans banc (la page d'attente),
+    ni la phrase sur le dépôt ni les mentions qui parlent du banc (propriété, responsabilité)."""
+    lignes = t["mentions"](EDITEUR, HEBERGEUR, base)
+    mentions = "\n".join("<p>%s</p>" % ligne for ligne in (lignes if banc else lignes[:3]))
+    phrase = "\n<p>%s</p>" % t["pied"] if banc else ""
+    return f"""<footer class="wf-foot"><div class="wf-foot-in">
+<div class="wf-made">{logo}<span>{t["cree"]}</span></div>{phrase}
 <details class="tt-mentions" id="legal"><summary>{t["mentions_titre"]}</summary>
 {mentions}
 </details>
 <!-- Le lien #legal ouvre les mentions, repliées sinon -->
 <script>if(location.hash=='#legal')document.getElementById('legal').open=true</script>
-</div></footer>
+</div></footer>"""
+
+
+def page_fermee(langue, logo, style):
+    """La page d'attente, quand FERME : le logo, une phrase et les mentions légales, rien du banc"""
+    t = TEXTES[langue]
+    base = vers(langue, LANGUES[0])
+    choix = "".join('<a href="%s" lang="%s" hreflang="%s"%s>%s</a>'
+                    % (vers(langue, l), l, l, ' aria-current="page"' if l == langue else "", l.upper()) for l in LANGUES)
+    return f"""<!doctype html>
+<html lang="{langue}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>WeSoar</title>
+<meta name="theme-color" content="#f7f4ee">
+<link rel="icon" type="image/svg+xml" href="{base}favicon.svg">
+<style>@font-face {{ font-family: 'Mona Sans'; src: url('{base}mona-sans.woff2') format('woff2'); font-weight: 200 900; font-display: swap; }}
+@font-face {{ font-family: 'Literata'; src: url('{base}literata.woff2') format('woff2'); font-weight: 400 600; font-display: swap; }}
+{style}</style>
+</head>
+<body>
+<header class="wf-top">
+<span class="wf-brand">{logo}</span>
+<nav class="wf-lang" aria-label="{t["langue"]}">{choix}</nav>
+</header>
+<main class="wf-page">
+<div class="wf-hero">
+<p class="wf-lead">{t["ferme"]}</p>
+</div>
+</main>
+{pied(t, logo, base, False)}
 </body>
 </html>
 """
@@ -353,7 +389,8 @@ def main():
         dst = os.path.join(OUT, d)
         if os.path.isdir(dst):
             shutil.rmtree(dst)
-        shutil.copytree(os.path.join(RACINE, d), dst)
+        if not FERME:
+            shutil.copytree(os.path.join(RACINE, d), dst)
     stls = sorted(f for f in os.listdir(os.path.join(RACINE, "stl")) if f.endswith(".stl") and not f.startswith("support_laser_"))
     lasers = json.loads(lire(OUTILS, "lasers.json"))
     site = ""
@@ -374,9 +411,17 @@ def main():
         dossier = OUT if langue == LANGUES[0] else os.path.join(OUT, langue)
         os.makedirs(dossier, exist_ok=True)
         open(os.path.join(dossier, "index.html"), "w", encoding="utf-8", newline="\n").write(
-            page(langue, logo, style, stls, lasers, site))
+            page_fermee(langue, logo, style) if FERME else page(langue, logo, style, stls, lasers, site))
     open(os.path.join(OUT, ".nojekyll"), "w").close()
-    print("site écrit dans", OUT, ":", len(stls), "fichiers STL,", len(lasers), "télémètres,", ", ".join(LANGUES))
+    # fermé, le site demande aux moteurs de recherche de ne rien indexer
+    robots = os.path.join(OUT, "robots.txt")
+    if FERME:
+        open(robots, "w").write("User-agent: *\nDisallow: /\n")
+        print("site fermé dans", OUT, ": page d'attente seulement (FERME dans outils/site.py)")
+    else:
+        if os.path.exists(robots):
+            os.remove(robots)
+        print("site écrit dans", OUT, ":", len(stls), "fichiers STL,", len(lasers), "télémètres,", ", ".join(LANGUES))
     # mentions légales : les champs encore à compléter ; GitHub affiche l'avertissement en tête de la publication
     noms = {"capital": "capital", "siege": "siège social", "immatriculation": "immatriculation (RCS)", "telephone": "téléphone"}
     manque = [noms.get(k, k) for k, v in EDITEUR.items() if A_COMPLETER in v or (k in noms and not v)]

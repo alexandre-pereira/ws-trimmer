@@ -648,6 +648,10 @@ python outils/site.py
 
 puis ouvrir `_site/index.html`.
 
+Le site est **fermé au public pour l'instant** : `FERME = True` en tête de `site.py` le
+réduit à une page « pas encore disponible » dans chaque langue, sans STL, images ni lien vers
+le dépôt, que les moteurs de recherche ne doivent pas indexer. `FERME = False` republie le banc.
+
 Le site existe en deux langues : en anglais à sa racine (la langue par défaut), depuis
 `README.en.md`, et en français dans `fr/`, depuis `README.md`. **Ce qui change dans un README
 se reporte dans l'autre**, sinon les deux pages ne disent plus la même chose ; seul le
