@@ -31,8 +31,8 @@ LANGUES = ["en", "fr"]
 CLE_LANGUE = "wf-lang"
 # image des aperçus de lien (réseaux sociaux, messageries)
 IMAGE_APERCU = "apercu/banc_ouvert_avant.png"
-# le banc est caché au public : le site n'est qu'une page d'attente (False pour le publier)
-FERME = True
+# True cache le banc au public : le site n'est plus qu'une page d'attente. Publié depuis le 19/11/2026
+FERME = False
 
 # éditeur du site, pour les mentions légales (LCEN, art. 1-1) : la société WeSoar, qui diffuse le
 # banc. Ce qui n'est pas encore connu porte la marque A_COMPLETER (« […à compléter] ») : la page
