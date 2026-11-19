@@ -42,11 +42,11 @@ A_COMPLETER = "à compléter"
 EDITEUR = {
     "nom": "WeSoar",
     "forme": "SASU",
-    "capital": "[capital %s]" % A_COMPLETER,                # capital social, ex. « 1 000 € »
-    "siege": "[adresse du siège %s]" % A_COMPLETER,         # adresse du siège social
-    "immatriculation": "RCS [ville %s] [SIREN %s]" % (A_COMPLETER, A_COMPLETER),  # ex. « RCS Annecy 123 456 789 »
-    "telephone": "[téléphone %s]" % A_COMPLETER,
-    "tva": "",            # numéro de TVA intracommunautaire, s'il existe ; vide, il n'est pas écrit
+    "capital": "100 €",                                     # capital social (Kbis du 19/11/2026)
+    "siege": "227 chemin de la Chapellière, 74210 Doussard",  # adresse du siège social
+    "immatriculation": "RCS Annecy 133 079 350",
+    "telephone": "+33 6 46 85 42 97",
+    "tva": "FR30133079350",  # numéro de TVA intracommunautaire, s'il existe ; vide, il n'est pas écrit
     "email": "alex@wesoar.fr",
     "directeur": "Alexandre Pereira",
 }
