@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: CERN-OHL-S-2.0
 // © 2026 WeSoar, conception Alexandre Pereira
-// Source : https://github.com/alexandre-pereira/ws-trimmer
+// Source : https://github.com/wesoar-fr/ws-trimmer
 // ============================================================
 //  Support du télémètre laser, côté voile — reprise d'un premier essai, « TEST.stl ».
 //
